@@ -23,34 +23,166 @@
       </div>
     </div>
 
-    <!-- Login -->
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to PoohTalk</h1>
-      <span class="welcome-header__text">
-        If you have a PoohTalk account,
-      </span>
-      <span class="welcome-header__text">
-        log in with your email or phone number.
-      </span>
+    <!-- Screen header -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span>
+          <a href="settings.html">
+            <i class="fas fa-cog fa-lg"></i>
+          </a>
+        </span>
+        <div class="screen-header__update"></div>
+      </div>
     </header>
-    <form action="friends.html" method="get" id="login-form">
-      <input
-        required
-        name="username"
-        type="text"
-        placeholder="Email or phone number"
-      />
-      <input
-        required
-        name="password"
-        minlength="5"
-        type="password"
-        placeholder="Password"
-      />
-      <input type="submit" value="Log In" />
-      <input type="submit" value="Sign Up" />
-      <a href="#">Find PoohTalk Account or Password</a>
-    </form>
+
+    <!-- Friends display -->
+    <a id="friends-display-link" href="">
+      <i class="fas fa-info-circle"></i>
+      Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <!-- Friends screen -->
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="images/pooh.png"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Pooh</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Friends</span>
+          <span>4</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <a href="chats.html">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="images/piglet.png"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  Piglet
+                </h4>
+              </div>
+            </div>
+            <div class="user-component__column">
+              <div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="images/tigger.png"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  Tigger
+                </h4>
+              </div>
+            </div>
+            <div class="user-component__column">
+              <div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="images/eeyore.png"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  Eeyore
+                </h4>
+              </div>
+            </div>
+            <div class="user-component__column">
+              <div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="images/honey.png"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  Honey
+                </h4>
+              </div>
+            </div>
+            <div class="user-component__column">
+              <div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__update"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Splash screen -->
+    <div id="splash-screen">
+      <img src="images/together.png" />
+    </div>
 
     <!-- Media query: Size regulation -->
     <div class="not-mobile too-wide">

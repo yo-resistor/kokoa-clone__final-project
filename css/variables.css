@@ -3,4 +3,6 @@
   --black: #222222;
   --white: #fffef5;
   --strongyellow: #fff460;
+  --horizontal-space: 25px;
+  --main-border: 1px solid var(--strongyellow);
 }
