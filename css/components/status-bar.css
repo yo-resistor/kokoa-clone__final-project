@@ -1,0 +1,78 @@
+.status-bar {
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 5px;
+  box-sizing: border-box;
+}
+
+.status-bar__column {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  position: relative;
+}
+
+.status-bar__column:first-child {
+  justify-content: flex-start;
+}
+.status-bar__column:nth-child(2) {
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  justify-content: flex-end;
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column .fa-battery-quarter {
+  margin: 0px 5px;
+}
+
+@keyframes flyingAirplane {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 125px;
+    opacity: 0;
+  }
+}
+.status-bar__column .fa-plane {
+  position: absolute;
+  animation: flyingAirplane 3s ease-in-out infinite;
+}
+
+@keyframes flyingAirplaneTxt {
+  0% {
+    left: 25px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.status-bar__column:first-child span {
+  position: absolute;
+  animation: flyingAirplaneTxt 3s ease-in-out infinite;
+}
+
+@keyframes alertRed {
+  0% {
+    color: inherit;
+  }
+  50% {
+    color: tomato;
+  }
+  100% {
+    color: inherit;
+  }
+}
+.status-bar__column:last-child i {
+  animation: alertRed 3s ease-in-out infinite;
+}
