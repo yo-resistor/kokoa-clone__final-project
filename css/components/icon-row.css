@@ -1,4 +1,5 @@
 .icon-row {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -11,8 +12,8 @@
 }
 .icon-row__icon i {
   font-size: 35px;
+  margin-bottom: 15px;
 }
 .icon-row__icon span {
   font-size: 18px;
-  margin-top: 15px;
 }

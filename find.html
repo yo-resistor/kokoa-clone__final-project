@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - PoohTalk</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Status bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Airplane mode</span>
+        <i class="fas fa-plane"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>08:17 PM</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-exclamation"></i>
+      </div>
+    </div>
+
+    <!-- Screen header -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span>
+          <a href="settings.html">
+            <i class="fas fa-cog fa-lg"></i>
+          </a>
+        </span>
+        <div class="screen-header__update"></div>
+      </div>
+    </header>
+
+    <!-- Main screen -->
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by</span>
+          <span>Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Openchat Home
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Frozen</h5>
+            <h6 class="open-post__hashtag">
+              #frozen#elsa#anna#arendelle#disney
+            </h6>
+            <div class="open-post__member">
+              <img src="images/elsa.webp" />
+              <span class="open-post__member-count">872k members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="images/castle-3.png" />
+              <div class="open-post__like">
+                <i class="fas fa-heart fa-xs"></i>
+                <span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Clubhouse</h5>
+            <h6 class="open-post__hashtag">#clubhouse#mickey#mouse#disney</h6>
+            <div class="open-post__member">
+              <img src="images/mickey.png" />
+              <span class="open-post__member-count">184k members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="images/clubhouse.png" />
+              <div class="open-post__like">
+                <i class="fas fa-heart fa-xs"></i>
+                <span>195</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__update"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Media query: Size regulation -->
+    <div class="not-mobile too-wide">
+      <span>Your display is too wide.</span>
+      <span>Ideal resolution is between 550 and 800px.</span>
+    </div>
+    <div class="not-mobile less-wide">
+      <span>Your display is too narrow.</span>
+      <span>Ideal resolution is between 550 and 800px.</span>
+    </div>
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c775d5d111.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
