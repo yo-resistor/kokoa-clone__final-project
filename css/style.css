@@ -11,9 +11,10 @@
 
 /* Screens */
 @import "screens/welcome.css";
+@import "screens/login.css";
 
 body {
-  background-color: var(--yellow);
+  background-color: var(--white);
   font-family: "arimo";
   height: 100vh;
   color: var(--black);

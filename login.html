@@ -23,6 +23,35 @@
       </div>
     </div>
 
+    <!-- Login -->
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to PoohTalk</h1>
+      <span class="welcome-header__text">
+        If you have a PoohTalk account,
+      </span>
+      <span class="welcome-header__text">
+        log in with your email or phone number.
+      </span>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        required
+        name="username"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        required
+        name="password"
+        minlength="5"
+        type="password"
+        placeholder="Password"
+      />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find PoohTalk Account or Password</a>
+    </form>
+
     <!-- Media query: Size regulation -->
     <div class="not-mobile too-wide">
       <span>Your display is too wide.</span>
