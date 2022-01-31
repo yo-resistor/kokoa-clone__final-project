@@ -12,6 +12,7 @@
 /* Screens */
 @import "screens/welcome.css";
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
   background-color: var(--white);

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoohTalk Friends Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Status bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Airplane mode</span>
+        <i class="fas fa-plane"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>08:17 PM</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-exclamation"></i>
+      </div>
+    </div>
+
+    <!-- Login -->
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to PoohTalk</h1>
+      <span class="welcome-header__text">
+        If you have a PoohTalk account,
+      </span>
+      <span class="welcome-header__text">
+        log in with your email or phone number.
+      </span>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        required
+        name="username"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        required
+        name="password"
+        minlength="5"
+        type="password"
+        placeholder="Password"
+      />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find PoohTalk Account or Password</a>
+    </form>
+
+    <!-- Media query: Size regulation -->
+    <div class="not-mobile too-wide">
+      <span>Your display is too wide.</span>
+      <span>Ideal resolution is between 550 and 800px.</span>
+    </div>
+    <div class="not-mobile less-wide">
+      <span>Your display is too narrow.</span>
+      <span>Ideal resolution is between 550 and 800px.</span>
+    </div>
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c775d5d111.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
