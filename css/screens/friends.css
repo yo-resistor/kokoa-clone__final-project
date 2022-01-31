@@ -26,10 +26,6 @@
   font-size: 17px;
 }
 
-.friends-screen__channel-header span:first-child {
-  margin-right: -470px;
-}
-
 @keyframes hideSplashScreen {
   from {
     opacity: 1;

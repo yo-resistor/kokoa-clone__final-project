@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat with Piglet - PoohTalk</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="chat-screen chat-screen__piglet">
+    <!-- Status bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Airplane mode</span>
+        <i class="fas fa-plane"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>08:17 PM</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-exclamation"></i>
+      </div>
+    </div>
+
+    <!-- Alternative header -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-chevron-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Piglet</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span class="alt-header__column-icon">
+          <i class="fas fa-bars fa-lg"></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- Main chat -->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Sunday, January 30, 2022</div>
+      <div class="message-row">
+        <img src="images/piglet.png" />
+        <div class="message-row__content">
+          <span class="message__author">Piglet</span>
+          <div class="message__info">
+            <span class="message__bubble">How do you spell love?</span>
+            <span class="message__time">21:21</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble"
+              >You don't spell it, you feel it.</span
+            >
+            <span class="message__time">21:23</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="images/piglet.png" />
+        <div class="message-row__content">
+          <span class="message__author">Piglet</span>
+          <div class="message__info">
+            <span class="message__bubble">Pooh!</span>
+            <span class="message__time">21:25</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Yes, Piglet?</span>
+            <span class="message__time">21:26</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="images/piglet.png" />
+        <div class="message-row__content">
+          <span class="message__author">Piglet</span>
+          <div class="message__info">
+            <span class="message__bubble">Nothing.</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="images/piglet.png" />
+        <div class="message-row__content">
+          <span class="message__author">Piglet</span>
+          <div class="message__info">
+            <span class="message__bubble"
+              >I just wanted to be sure of you.</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="fas fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__update"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Media query: Size regulation -->
+    <div class="not-mobile too-wide">
+      <span>Your display is too wide.</span>
+      <span>Ideal resolution is between 550 and 800px.</span>
+    </div>
+    <div class="not-mobile less-wide">
+      <span>Your display is too narrow.</span>
+      <span>Ideal resolution is between 550 and 800px.</span>
+    </div>
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c775d5d111.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

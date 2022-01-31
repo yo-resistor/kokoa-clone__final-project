@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings - PoohTalk</title>
+    <title>Chat with Tigger - PoohTalk</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="chat-screen chat-screen__tigger">
     <!-- Status bar -->
     <div class="status-bar">
       <div class="status-bar__column">
@@ -26,45 +26,56 @@
     <!-- Alternative header -->
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more.html">
+        <a href="chats.html">
           <i class="fas fa-chevron-left fa-2x"></i>
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Settings</h1>
+        <h1 class="alt-header__title">Tigger</h1>
       </div>
       <div class="alt-header__column">
-        <i class="fas fa-search fa-lg"></i>
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span class="alt-header__column-icon">
+          <i class="fas fa-bars fa-lg"></i>
+        </span>
       </div>
     </header>
 
-    <!-- Settings list -->
-    <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-bullhorn"></i>
-            <span>Notices</span>
+    <!-- Main chat -->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Satureday, January 29, 2022</div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">
+              Oh dear, It seems this rainbow's end simply ends.
+            </span>
+            <span class="message__time">15:49</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-flask"></i>
-            <span>Kokoa Lab</span>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="images/tigger.png" />
+        <div class="message-row__content">
+          <span class="message__author">Tigger</span>
+          <div class="message__info">
+            <span class="message__bubble">
+              Huh. It was crazy enough to work -- I wonder why it didn't?
+            </span>
+            <span class="message__time">15:50</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-info-circle"></i>
-            <span>Version</span>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">
+              Thinking is ever so much tastier when topped with a smackerel.
+            </span>
+            <span class="message__time">15:51</span>
           </div>
-          <div class="settings__setting-column settings__setting-subtext">
-            Latest Version
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </main>
 
     <!-- Navigation -->
@@ -78,7 +89,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i>
+            <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">

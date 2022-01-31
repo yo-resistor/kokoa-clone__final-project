@@ -21,6 +21,7 @@
 @import "screens/friends.css";
 @import "screens/settings.css";
 @import "screens/more.css";
+@import "screens/chat.css";
 
 body {
   background-color: var(--white);
