@@ -1,6 +1,6 @@
 :root {
   --yellow: #fff9a1;
-  --black: #222222;
+  --black: rgb(34, 34, 34);
   --white: #fffef5;
   --strongyellow: #fff460;
   --horizontal-space: 25px;
