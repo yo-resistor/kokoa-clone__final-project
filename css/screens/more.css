@@ -1,0 +1,15 @@
+.more-screen .user-component {
+  margin-bottom: 50px;
+}
+
+.more-screen .user-component__column:last-child i {
+  color: #2e363e;
+}
+
+.more-screen .user-component__subtitle i {
+  color: tomato;
+}
+
+.more-screen .icon-row {
+  margin-top: 35px;
+}
